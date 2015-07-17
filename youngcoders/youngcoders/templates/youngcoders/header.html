@@ -1,0 +1,15 @@
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'youngcoders/style.css' %}" />
+
+<div id="headertop">
+
+    {% if lesson %}
+        <div id="lessonstep">
+            <a href="/learn/lesson/{{ lesson.number }}/">{{ lesson }}</a>{% if step %} | Step {{ step.step_number }}: {{ step.step_name }}{% endif %}
+        </div>
+    {% endif %}
+
+    <a href="/learn/">Learn</a> <a href="/teach/">Teach</a> <a href="/pages/contribute/">Contribute</a>
+
+</div>

@@ -1,0 +1,63 @@
+body {
+    background-image:none;
+}
+
+#lesson-list-container {
+    text-align: left;
+    float: left;
+    width: 95%;
+}
+#lesson-list-text {
+    float: right;
+    width: 50%;
+    text-align: left;
+}
+
+#step-container {
+    text-align: center;
+    float: left;
+    width: 95%;
+    overflow: visible;
+    min-width: 1200px;
+}
+#step-description { 
+    display: inline-block;
+    text-align: left;
+    float: left;
+    width: 300px;
+    padding: 10px;
+}
+#step-image {
+    display: inline-block;
+    float: left;
+    margin: 10px;
+}
+
+#lesson-container {
+    text-align: center;
+    float: left;
+    width: 95%;
+}
+#lesson-text {
+    float: right;
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+}
+#lesson-container ul {
+    text-align: left;
+}
+
+#prev_next {
+    clear: both;
+    width: 95%;
+    text-align: center;
+    padding-top: 10px;
+}
+#prev_next a {
+    text-decoration: none;
+    margin: 20px;
+}
+#prev_next_lesson {
+    text-transform: uppercase;
+}
