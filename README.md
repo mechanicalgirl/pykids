@@ -1,19 +1,23 @@
 To run locally:
 ---------------
 
-```cd ~/path/to/pythonyoungcoders/young-coders-env/
+```python
+cd ~/path/to/pythonyoungcoders/young-coders-env/
 source bin/activate
 cd ..
 pip install -r requirements.txt
 cd youngcoders
 python manage.py migrate
-python manage.py runserver```
+python manage.py runserver
+```
 
 To create a superuser (for admin access):
 -----------------------------------------
 
-```cd ~/path/to/pythonyoungcoders/youngcoders/
-python manage.py createsuperuser```
+```python
+cd ~/path/to/pythonyoungcoders/youngcoders/
+python manage.py createsuperuser
+```
 
 To view the admin:
 ------------------
