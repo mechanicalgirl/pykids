@@ -19,9 +19,16 @@ body {
     text-align: left;
     overflow: visible;
     min-width: 800px;
+    margin: 10px;
 }
 #step-image {
     margin: 10px;
+}
+#step-name {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #5D8896;
 }
 
 #prev_next {
