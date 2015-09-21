@@ -15,6 +15,7 @@ def lesson_step(request, lesson_number, step_number):
     """A single step within a lesson"""
     lesson = Lesson.objects.get(number=lesson_number)
     step = Step.objects.get(lesson=lesson.id, step_number=step_number)
+    all_steps = Step.objects.filter(lesson=lesson.id)
 
     prev_step = None
     try:
@@ -43,6 +44,7 @@ def lesson_step(request, lesson_number, step_number):
     context = {
         'lesson': lesson,
         'step': step,
+        'step_list': all_steps,
         'prev_step': prev_step,
         'next_step': next_step,
         'prev_lesson': prev_lesson,

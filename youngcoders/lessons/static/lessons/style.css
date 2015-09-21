@@ -2,50 +2,26 @@ body {
     background-image:none;
 }
 
-#lesson-list-container {
-    text-align: left;
+#container {
     float: left;
-    width: 95%;
-}
-#lesson-list-text {
-    float: right;
-    width: 50%;
+    width: 1200px;
     text-align: left;
 }
-
-#step-container {
-    text-align: center;
+#nav-list {
     float: left;
-    width: 95%;
-    overflow: visible;
-    min-width: 1200px;
-}
-#step-description { 
-    display: inline-block;
+    width: 250px;
     text-align: left;
-    float: left;
-    width: 300px;
-    padding: 10px;
-}
-#step-image {
-    display: inline-block;
-    float: left;
     margin: 10px;
 }
-
-#lesson-container {
-    text-align: center;
+#content {
     float: left;
-    width: 95%;
-}
-#lesson-text {
-    float: right;
-    width: 50%;
+    width: 800px;
     text-align: left;
-    padding: 20px;
+    overflow: visible;
+    min-width: 800px;
 }
-#lesson-container ul {
-    text-align: left;
+#step-image {
+    margin: 10px;
 }
 
 #prev_next {

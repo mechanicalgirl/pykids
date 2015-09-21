@@ -4,12 +4,6 @@
 
 <div id="headertop">
 
-    {% if lesson %}
-        <div id="lessonstep">
-            <a href="/learn/lesson/{{ lesson.number }}/">{{ lesson }}</a>{% if step %} | Step {{ step.step_number }}: {{ step.step_name }}{% endif %}
-        </div>
-    {% endif %}
-
-    <a href="/learn/">Learn</a> <a href="/teach/">Teach</a> <a href="/pages/contribute/">Contribute</a>
+  <a href="/learn/">Learn</a> <a href="/teach/">Teach</a> <a href="/pages/contribute/">Contribute</a>
 
 </div>

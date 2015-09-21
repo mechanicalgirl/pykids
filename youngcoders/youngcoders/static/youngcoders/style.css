@@ -46,13 +46,18 @@ li {
     font-size: 16px;
     padding: 0px;
 }
+#lesson-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #5D8896;
+}
 
 .left-arrow {
     display: inline-block;
     position: relative;
     color: #fff;
     background: #5D8896;
-    padding: 15px;
+    padding: 10px;
 }
 .left-arrow:after {
     content: '';
@@ -74,7 +79,7 @@ li {
     position: relative;
     color: #fff;
     background: #5D8896;
-    padding: 15px;
+    padding: 10px;
 }
 .right-arrow:after {
     content: '';

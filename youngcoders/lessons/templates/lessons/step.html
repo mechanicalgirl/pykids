@@ -1,25 +1,14 @@
 {% include "youngcoders/header.html" %}
 {% include "lessons/header.html" %}
 
-<div id="step-container">
-{% if step %}
-    {% load staticfiles %}
-    <div id="step-description">
-        {% if step.audiocast %}
-            <object type="application/x-shockwave-flash" data="http://flash-mp3-player.net/medias/player_mp3_mini.swf" width="200" height="20">
-                <param name="movie" value="http://flash-mp3-player.net/medias/player_mp3_mini.swf" />
-                <param name="bgcolor" value="#5D8896" />
-                <param name="FlashVars" value="mp3={% static 'lessons/audio/' %}{{ step.audiocast }}" />
-            </object>
-        {% endif %}
-        {{ step.description | safe }}
-    </div>
-    <div id="step-image">
-        <img src="{% static 'lessons/images/' %}YoungCoders_{{ lesson.number }}_{{ step.step_number }}.jpg" width="750">
-    </div>
-{% else %}
-    <p>No details are available.</p>
-{% endif %}
-</div>
+<div id="container">
 
-{% include "lessons/footer.html" %}
+  <div id="nav-list">
+    {% include "lessons/step-navigation.html" %}
+  </div>
+
+  <div id="content">
+    {% include "lessons/step-content.html" %}
+  </div>
+
+</div>
