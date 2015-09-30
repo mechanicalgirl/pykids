@@ -15,7 +15,7 @@ def lesson_step(request, lesson_number, step_number):
     """A single step within a lesson"""
     lesson = Lesson.objects.get(number=lesson_number)
     step = Step.objects.get(lesson=lesson.id, step_number=step_number)
-    all_steps = Step.objects.filter(lesson=lesson.id)
+    all_steps = Step.objects.filter(lesson=lesson.id).order_by('step_number')
 
     prev_step = None
     try:
@@ -55,7 +55,7 @@ def lesson_step(request, lesson_number, step_number):
 def lesson(request, lesson_number):
     """All the steps within a single lesson"""
     lesson = Lesson.objects.get(number=lesson_number)
-    all_steps = Step.objects.filter(lesson=lesson.id)
+    all_steps = Step.objects.filter(lesson=lesson.id).order_by('step_number')
 
     prev_lesson = None
     try:
