@@ -21,6 +21,48 @@ body {
     min-width: 800px;
     margin: 10px;
 }
+#step-header-pink {
+    width: 750px;
+    height: 130px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 70px;
+    padding: 10px;
+    text-align: center;
+    line-height: 130px; 
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #E25B9B;
+}
+#step-header-green {
+    width: 750px;
+    height: 130px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 70px;
+    padding: 10px;
+    text-align: center;
+    line-height: 130px;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #87C73C;
+}
+#step-header-purple {
+    width: 750px;
+    height: 130px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 70px;
+    padding: 10px;
+    text-align: center;
+    line-height: 130px; 
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #8669E5;
+}
 #step-image {
     margin: 10px;
 }

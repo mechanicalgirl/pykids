@@ -6,7 +6,7 @@ class LessonAdmin(admin.ModelAdmin):
     ordering = ['number']
 
 class StepAdmin(admin.ModelAdmin):
-    ordering = ['lesson', 'step_number']
+    ordering = ['lesson__number', 'step_number']
 
 admin.site.register(Lesson, LessonAdmin)
 admin.site.register(Step, StepAdmin)
