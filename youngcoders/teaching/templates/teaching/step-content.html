@@ -1,0 +1,16 @@
+{% if step %}
+  {% load staticfiles %}
+
+    <div id="step-description">
+
+        <div id="step-name">{{ step.step_name }}</div>
+
+        {{ step.description | safe }}
+
+    </div>
+
+{% else %}
+
+    <p>No details are available.</p>
+
+{% endif %}

@@ -8,7 +8,6 @@ class Lesson(models.Model):
     def __str__(self):
         return "Lesson %s: %s" % (self.number, self.name)
 
-
 class Step(models.Model):
     lesson = models.ForeignKey(Lesson)
     step_number = models.IntegerField()

@@ -17,18 +17,6 @@ def lesson_step(request, lesson_number, step_number):
     step = Step.objects.get(lesson=lesson.id, step_number=step_number)
     all_steps = Step.objects.filter(lesson=lesson.id).order_by('step_number')
 
-    prev_step = None
-    try:
-        prev_step = Step.objects.get(lesson=lesson.id, step_number=int(step_number)-1)
-    except:
-        pass
-
-    next_step = None
-    try:
-        next_step = Step.objects.get(lesson=lesson.id, step_number=int(step_number)+1)
-    except:
-        pass
-
     prev_lesson = None
     try:
         prev_lesson = Lesson.objects.get(number=int(lesson_number)-1)
@@ -45,8 +33,6 @@ def lesson_step(request, lesson_number, step_number):
         'lesson': lesson,
         'step': step,
         'step_list': all_steps,
-        'prev_step': prev_step,
-        'next_step': next_step,
         'prev_lesson': prev_lesson,
         'next_lesson': next_lesson,
     }

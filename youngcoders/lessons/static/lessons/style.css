@@ -21,6 +21,7 @@ body {
     min-width: 800px;
     margin: 10px;
 }
+
 #step-header-pink {
     width: 750px;
     height: 130px;
@@ -85,4 +86,30 @@ body {
 }
 #prev_next_lesson {
     text-transform: uppercase;
+}
+
+ul.orange-circle {
+    list-style-image: url('orange-circle.jpg');
+    font-size: 30px;
+    margin: 10px;
+    line-height: 2;
+}
+.pink-prompt {
+    font-size: 30px;
+    font-weight: bold;
+    color: pink;
+}
+
+pre code {
+    background-color: #fff;
+    color: #000;
+    overflow: hidden;
+    display:block;
+    padding:10px;
+}
+.codewrap {
+    background-color: #F0F0F0;
+    padding: 10px;
+    margin: 0px;
+    width: 90%; 
 }

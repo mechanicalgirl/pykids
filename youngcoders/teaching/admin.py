@@ -1,3 +1,8 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Step
+
+class StepAdmin(admin.ModelAdmin):
+    ordering = ['step_number']
+
+admin.site.register(Step, StepAdmin)

@@ -95,3 +95,10 @@ li {
     border-bottom: 10px solid transparent;
     border-right: 10px solid transparent;
 }
+
+.active {
+  font-weight: bold;
+}
+.active a {
+    text-decoration: underline;
+}

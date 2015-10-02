@@ -4,25 +4,24 @@
     Lesson {{ lesson.number }}: {{ lesson.name }}<br>
   </div>
 
-  <hr>
-
   {% if step_list %}
 
-    {% for step in step_list %}
-
-      <p>
-        <a href="/learn/lesson/{{ lesson.number }}/step/{{ step.step_number }}">
-            Step {{ step.step_number }}: {{ step.step_name }}
-        </a>
+    {% for item in step_list %}
+      {% if item == step %}<p class="active">{% else %}<p>{% endif %}
+          <a href="/learn/lesson/{{ lesson.number }}/step/{{ item.step_number }}">
+              {{ item.step_name }}
+          </a>
       </p>
-
     {% endfor %}
 
   {% endif %}
 
   {% if next_lesson %}
+    <p><br></p>
+    <p>
     <a href="/learn/lesson/{{ next_lesson.number }}/step/1/" id="prev_next_lesson" class="right-arrow">
-      NEXT - <br>{{ next_lesson }}</a>
+      {{ next_lesson }}</a>
+    </p>
   {% endif %}
 
 </div>
