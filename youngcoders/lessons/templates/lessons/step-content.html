@@ -27,13 +27,13 @@
         {% endif %}
         -->
 
-        {{ step.description | safe }}
-
       {% if step.image %}
         <div id="step-image">
           <img src="{% static 'lessons/images/' %}{{ step.image }}">
         </div>
       {% endif %}
+
+      {{ step.description | safe }}
 
     </div>
 
