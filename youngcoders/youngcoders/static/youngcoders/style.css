@@ -87,18 +87,20 @@ li {
     position: absolute;
     left: 100%;
     top: 50%;
-    margin-top: -10px;
+    margin-top: -20px;
     width: 0;
     height: 0;
-    border-top: 10px solid transparent;
-    border-left: 10px solid #5D8896;
-    border-bottom: 10px solid transparent;
-    border-right: 10px solid transparent;
+    border-top: 20px solid transparent;
+    border-left: 20px solid #5D8896;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid transparent;
 }
 
 .active {
   font-weight: bold;
 }
 .active a {
-    text-decoration: underline;
+    color: #fff;
+    background-color: #5D8896;
+    padding: 5px;
 }

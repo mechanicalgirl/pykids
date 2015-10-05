@@ -94,10 +94,18 @@ ul.orange-circle {
     margin: 10px;
     line-height: 2;
 }
+ul.purple-star {
+    list-style-image: url('purple-star.jpg');
+    font-size: 30px;
+    margin: 10px;
+    line-height: 2;
+}
+
 .pink-prompt {
     font-size: 30px;
     font-weight: bold;
     color: pink;
+    line-height: .25; 
 }
 
 pre code {
@@ -111,5 +119,6 @@ pre code {
     background-color: #F0F0F0;
     padding: 10px;
     margin: 0px;
+    margin-left: 20px;
     width: 90%; 
 }
