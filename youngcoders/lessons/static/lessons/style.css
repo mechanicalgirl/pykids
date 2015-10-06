@@ -94,8 +94,20 @@ ul.orange-circle {
     margin: 10px;
     line-height: 2;
 }
+ul.orange-star {
+    list-style-image: url('orange-star.jpg');
+    font-size: 30px;
+    margin: 10px;
+    line-height: 2;
+}
 ul.purple-star {
     list-style-image: url('purple-star.jpg');
+    font-size: 30px;
+    margin: 10px;
+    line-height: 1.5;
+}
+ul.pink-circle {
+    list-style-image: url('pink-circle.jpg');
     font-size: 30px;
     margin: 10px;
     line-height: 2;
@@ -122,3 +134,23 @@ pre code {
     margin-left: 20px;
     width: 90%; 
 }
+
+.operators {
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 40px;
+    padding: 10px;
+}
+.opl {
+    float: left;
+    width: 25%;
+    padding: 5px;
+    padding-right: 50px;
+    text-align: right;
+}
+.opr {
+    float: left;
+    width: 45%;
+    padding: 5px;
+    text-align: left;
+}   

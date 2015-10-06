@@ -21,7 +21,9 @@ li {
     padding-left: 15px;
     margin-bottom: 10px;
 }
-
+div.clear, p.clear {
+    clear: both;
+}
 #headertop {
     background-color: #5D8896;
     text-align: right;
