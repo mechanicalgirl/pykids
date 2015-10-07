@@ -104,7 +104,6 @@ ul.purple-star {
     list-style-image: url('purple-star.jpg');
     font-size: 30px;
     margin: 10px;
-    line-height: 1.5;
 }
 ul.pink-circle {
     list-style-image: url('pink-circle.jpg');
@@ -113,26 +112,25 @@ ul.pink-circle {
     line-height: 2;
 }
 
-.pink-prompt {
-    font-size: 30px;
-    font-weight: bold;
-    color: pink;
-    line-height: .25; 
+ul.prompt {
+    list-style-image: url('prompt.jpg');
+    list-style-position: inside;
+    font-size: 20px;
+    font-family: monospace;
+    line-height: 1.5;
 }
-
-pre code {
-    background-color: #fff;
-    color: #000;
-    overflow: hidden;
-    display:block;
-    padding:10px;
+.hello {
+    width: 300px;
+    text-align: center;
 }
 .codewrap {
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
     padding: 10px;
     margin: 0px;
     margin-left: 20px;
     width: 90%; 
+    overflow: hidden;
+    display:block;
 }
 
 .operators {
@@ -143,14 +141,14 @@ pre code {
 }
 .opl {
     float: left;
-    width: 25%;
+    width: 100px;
     padding: 5px;
-    padding-right: 50px;
+    padding-right: 30px;
     text-align: right;
 }
 .opr {
     float: left;
-    width: 45%;
+    width: 200px;
     padding: 5px;
     text-align: left;
 }   
