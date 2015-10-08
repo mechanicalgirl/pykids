@@ -21,6 +21,9 @@ li {
     padding-left: 15px;
     margin-bottom: 10px;
 }
+div.left, p.left {
+    float: left;
+}
 div.right, p.right {
     float: right;
 }

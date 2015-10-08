@@ -111,13 +111,23 @@ ul.pink-circle {
     margin: 10px;
     line-height: 2;
 }
-
 ul.prompt {
     list-style-image: url('prompt.jpg');
     list-style-position: inside;
+    padding: 0px;
     font-size: 20px;
     font-family: monospace;
     line-height: 1.5;
+}
+ul.learn {
+    list-style-type: circle;
+}
+
+.indent {
+    margin-left: 100px;
+}
+.indenttwo {
+    margin-left: 50px;
 }
 .hello {
     width: 300px;
@@ -125,7 +135,7 @@ ul.prompt {
 }
 .codewrap {
     background-color: #f0f0f0;
-    padding: 10px;
+    padding: 0px;
     margin: 0px;
     margin-left: 20px;
     width: 90%; 
