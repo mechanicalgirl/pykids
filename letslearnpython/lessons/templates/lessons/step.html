@@ -1,0 +1,34 @@
+{% include "letslearnpython/common_head.html" %}
+{% include "lessons/lessons_header.html" %}
+
+<div class="yk-container">
+
+  <!-- lessons links -->
+  <div class="yk-container-nav">
+    <div class="row">
+      <div class="col-sm-9">
+        <div class="list-group table-of-contents">
+          {% if step_list %}
+            {% for item in step_list %}
+              <a class="list-group-item" href="/learn/lesson/{{ lesson.number }}/step/{{ item.step_number }}">
+                {{ item.step_name }}
+              </a>
+            {% endfor %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div><!-- left float -->
+
+  <!-- content -->
+  <div class="yk-container-content">
+    {% if step %}
+      {{ step.description | safe }}
+    {% else %}
+      No details are available.
+    {% endif %}
+  </div><!-- left float 2 -->
+
+</div>
+
+{% include "letslearnpython/common_footer.html" %}

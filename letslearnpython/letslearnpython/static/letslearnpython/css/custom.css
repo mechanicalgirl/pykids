@@ -1,0 +1,18 @@
+.yk-container {
+  min-height: 500px;
+  overflow: auto;
+  width: 100%;
+}
+.yk-container-nav {
+  float: left;
+  width: 20%;
+}
+.yk-container-content {
+  float: left;
+  width: 75%;
+}
+.yk-container-content-flatpage {
+  float: left;
+  width: 75%;
+  padding-left: 50px;
+}

@@ -1,0 +1,33 @@
+{% include "letslearnpython/common_head.html" %}
+{% include "teaching/teach_header.html" %}
+
+<div class="yk-container">
+
+  <!-- step links -->
+  <div class="yk-container-nav">
+    <div class="row">
+      <div class="col-sm-9">
+        <div class="list-group table-of-contents">
+          {% if step_list %}
+            {% for item in step_list %}
+              <a class="list-group-item" href="/teach/step/{{ item.step_number }}/">{{ item.step_name }}</a>
+            {% endfor %}
+          {% else %}
+            <!-- nothing to see here -->
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div><!-- left float -->
+
+  <!-- content -->
+  <div class="yk-container-content">
+    <h2>Teach Python!</h2>
+    <p>this is a class we teach at PyCon every year, blah blah blah</p>
+    <p>But you can teach it in your community too, etc etc etc</p>
+  </div><!-- left float 2 -->
+  
+</div><!-- container -->
+
+
+{% include "letslearnpython/common_footer.html" %}

@@ -2,11 +2,11 @@ To run locally:
 ---------------
 
 ```python
-cd ~/path/to/pythonyoungcoders/young-coders-env/
+cd ~/Code/pythonyoungcoders/young-coders-env
 source bin/activate
 cd ..
 pip install -r requirements.txt
-cd youngcoders
+cd letslearnpython
 python manage.py migrate
 python manage.py runserver
 ```
@@ -15,7 +15,7 @@ To create a superuser (for admin access):
 -----------------------------------------
 
 ```python
-cd ~/path/to/pythonyoungcoders/youngcoders/
+cd ~/path/to/pythonyoungcoders/letslearnpython/
 python manage.py createsuperuser
 ```
 
