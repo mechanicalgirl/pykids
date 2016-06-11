@@ -1087,7 +1087,8 @@ html {
 }
 body {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  /* CHANGED BY APD */
+  font-size: 16px;
   line-height: 1.846;
   color: #666666;
   background-color: #ffffff;
