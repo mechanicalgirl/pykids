@@ -9,7 +9,7 @@ def index(request):
     context = {
         'step_list': all_steps,
     }
-    return render(request, 'teaching/index.html', context)
+    return render(request, 'teaching/step.html', context)
 
 def step(request, step_number):
     step = Step.objects.get(step_number=step_number)

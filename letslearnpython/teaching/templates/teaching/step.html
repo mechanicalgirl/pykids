@@ -1,33 +1,36 @@
 {% include "letslearnpython/common_head.html" %}
 {% include "teaching/teach_header.html" %}
 
-<div class="yk-container">
+<div class="yk-container container">
 
-  <!-- step links -->
-  <div class="yk-container-nav">
-    <div class="row">
-      <div class="col-sm-9">
-        <div class="list-group table-of-contents">
-          {% if step_list %}
-            {% for item in step_list %}
-              <a class="list-group-item" href="/teach/step/{{ item.step_number }}">{{ item.step_name }}</a>
-            {% endfor %}
-          {% endif %}
-        </div>
-      </div>
+  <div class="row">
+
+    <!-- left nav links -->
+    <div class="list-group yk-container-nav col-sm-3">
+      {# Loop over all teaching guidelines #}
+      {% if step_list %}
+        {% for item in step_list %}
+          <a class="list-group-item yk-guideline-name" href="/teach/step/{{ item.step_number }}">{{ item.step_name }}</a>
+        {% endfor %}
+      {% endif %}
     </div>
-  </div><!-- left float -->
+    <!-- end left nav links -->
 
-  <!-- content -->
-  <div class="yk-container-content">
-    {% if step %}
-      {{ step.step_name }}<br>
-      {{ step.description | safe }}
-    {% else %}
-      <p>No details are available.</p>
-    {% endif %}
-  </div><!-- left float 2 -->
-  
-</div>
+    <!-- content -->
+    <div class="yk-container-content col-sm-9">
+      {% if step %}
+        <h2>{{ step.step_name }}</h2>
+        {{ step.description | safe }}
+      {% else %}
+        {# Teaching landing page. No guideline has been selected yet. #}
+        <h2>Teach Python!</h2>
+        <p>this is a class we teach at PyCon every year, blah blah blah</p>
+        <p>But you can teach it in your community too, etc etc etc</p>
+      {% endif %}
+    </div><!-- end content -->
+
+  </div> {# .row #}
+</div> {# .container #}
+
 
 {% include "letslearnpython/common_footer.html" %}

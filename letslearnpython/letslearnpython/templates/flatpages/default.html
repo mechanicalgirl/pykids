@@ -1,23 +1,22 @@
 {% include "letslearnpython/common_head.html" %}
 {% include "letslearnpython/llp_header.html" %}
 
-<div class="yk-container">
+<div class="yk-container container">
 
-  <!-- step links -->
-  <div class="yk-container-nav">
-    <div class="row">
-      <div class="col-sm-9"></div>
-    </div>
-  </div><!-- left float -->
+  <div class="row">
 
-  <!-- content -->
-  <div class="yk-container-content">
+    <!-- left nav links -->
+    <div class="list-group yk-container-nav col-sm-3">
+        <br>
+    </div><!-- end left nav links -->
 
-    <h2>{{ flatpage.title }}</h2>
-    {{ flatpage.content }}
+    <!-- content -->
+    <div class="yk-container-content col-sm-9">
+        <h2>{{ flatpage.title }}</h2>
+        {{ flatpage.content }}
+    </div><!-- end home page content -->
 
-  </div><!-- content -->
-  
-</div>
+  </div> {# .row #}
+</div> {# .container #}
 
 {% include "letslearnpython/common_footer.html" %}
