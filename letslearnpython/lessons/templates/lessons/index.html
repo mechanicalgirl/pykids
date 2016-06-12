@@ -1,7 +1,7 @@
 {% include "letslearnpython/common_head.html" %}
 {% include "lessons/lessons_header.html" %}
 
-<div class="yk-container">
+<div class="container yk-container">
 
   <!-- lessons links -->
   <div class="yk-container-nav">
@@ -10,7 +10,7 @@
         <div class="list-group table-of-contents">
           {% if lesson_list %}
             {% for item in lesson_list %}
-              <a class="list-group-item" href="/learn/lesson/{{ item.number }}/step/1/">Lesson {{ item.number }} : {{ item.name }}</a>
+              <a class="list-group-item" href="/learn/lesson/{{ item.number }}/step/1/">Lesson {{ item.number }}: {{ item.name }}</a>
             {% endfor %}
           {% else %}
             <p>No lessons are available.</p>
