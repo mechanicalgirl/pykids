@@ -1,3 +1,7 @@
+.yk-page-title {
+  border-bottom: 1px solid #ccc;
+}
+
 .yk-container {
   min-height: 500px;
   
@@ -6,9 +10,20 @@
 */}
 .yk-container-nav {
   font-size: 13px;
-/*  float: left;
-  width: 20%;
-*/}
+  line-height: 1.5;
+}
+  
+  /* When the yk-menu-collapsed class name is added to the menu DIV, hide everything except for the "hide/show menu" control. */
+  .yk-container-nav.yk-menu-collapsed .yk-lesson-name,
+  .yk-container-nav.yk-menu-collapsed .yk-step-name {
+    display: none;
+  }
+  
+  /* The link that toggles display of the menu. */
+  .yk-toggle-menu {
+    font-weight: bold;
+    text-align: center;
+  }
   
   .yk-container-nav .active {
   }
@@ -36,7 +51,8 @@
 }
 
 .yk-step-name {
-  padding-left: 45px;
+  background-color: #f6f6f6;
+  padding-left: 30px;
 }
 
 /* The links at the bottom of the page to next/previous steps. */
@@ -56,3 +72,26 @@
     float: right;
     width: 48;
   }
+
+@media (max-width: 767px) {
+  /* On small screens we need this padding fix */
+  .yk-container-nav {
+    padding-left: 15px;
+  }
+}
+
+div.codewrap {
+  whitespace: pre;
+  font-family: monospace;
+}
+
+div.codewrap ul.prompt {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul.prompt li:before {
+  content: '>>> ';
+  color: red;
+}
