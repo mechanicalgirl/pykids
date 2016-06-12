@@ -2,7 +2,7 @@ To run locally:
 ---------------
 
 ```python
-cd ~/Code/pythonyoungcoders/young-coders-env
+cd ~/path/to/pythonyoungcoders/young-coders-env
 source bin/activate
 cd ..
 pip install -r requirements.txt
