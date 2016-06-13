@@ -31,6 +31,7 @@ INSTALLED_APPS = (
     'letslearnpython',
     'lessons',
     'teaching',
+    'landing',
 )
 
 MIDDLEWARE_CLASSES = (
