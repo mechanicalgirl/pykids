@@ -30,19 +30,17 @@ To manage content changes:
 
 If you make changes to any content in the admin, dump the data back out into fixtures, then commit the new fixtures files:
 
-```cd /path/to/pythonyoungcoders/letslearnpython
-python manage.py dumpdata --format=json lessons > lessons/fixtures/initial_data.json
-python manage.py dumpdata --format=json flatpages > letslearnpython/fixtures/initial_data.json
-python manage.py dumpdata --format=json teaching > teaching/fixtures/initial_data.json
-```
+    cd /path/to/pythonyoungcoders/letslearnpython
+    python manage.py dumpdata --format=json lessons > lessons/fixtures/initial_data.json
+    python manage.py dumpdata --format=json flatpages > letslearnpython/fixtures/initial_data.json
+    python manage.py dumpdata --format=json teaching > teaching/fixtures/initial_data.json
 
 To load data back into the db from fixtures:
 
-```cd /path/to/pythonyoungcoders/letslearnpython
-python manage.py loaddata lessons/fixtures/initial_data.json
-python manage.py loaddata letslearnpython/fixtures/initial_data.json
-python manage.py loaddata teaching/fixtures/initial_data.json
-```
+    cd /path/to/pythonyoungcoders/letslearnpython
+    python manage.py loaddata lessons/fixtures/initial_data.json
+    python manage.py loaddata letslearnpython/fixtures/initial_data.json
+    python manage.py loaddata teaching/fixtures/initial_data.json
 
 You don't need to clear out or reset the database at any time - loaddata 
 
