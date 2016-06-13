@@ -31,11 +31,10 @@ To manage content changes:
 If you make changes to any content in the admin, dump the data back out into fixtures, then commit the new fixtures files:
 
 ```cd /path/to/pythonyoungcoders/letslearnpython
-python manage.py dumpdata --format=json lessons > ~/path/to/pythonyoungcoders/letslearnpython/lessons/fixtures/initial_data.json
-python manage.py dumpdata --format=json flatpages > ~/path/to/pythonyoungcoders/letslearnpython/letslearnpython/fixtures/initial_data.json
-python manage.py dumpdata --format=json teaching > ~/path/to/pythonyoungcoders/letslearnpython/teaching/fixtures/initial_data.json
+python manage.py dumpdata --format=json lessons > lessons/fixtures/initial_data.json
+python manage.py dumpdata --format=json flatpages > letslearnpython/fixtures/initial_data.json
+python manage.py dumpdata --format=json teaching > teaching/fixtures/initial_data.json
 ```
-
 
 To load data back into the db from fixtures:
 
