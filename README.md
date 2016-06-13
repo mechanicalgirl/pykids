@@ -36,6 +36,7 @@ python manage.py dumpdata --format=json flatpages > ~/path/to/pythonyoungcoders/
 python manage.py dumpdata --format=json teaching > ~/path/to/pythonyoungcoders/letslearnpython/teaching/fixtures/initial_data.json
 ```
 
+
 To load data back into the db from fixtures:
 
 ```cd /path/to/pythonyoungcoders/letslearnpython
