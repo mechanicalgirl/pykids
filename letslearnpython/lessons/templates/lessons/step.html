@@ -3,10 +3,15 @@
 
 <div class="yk-container container">
   
+  
   <div class="row">
 
     <!-- lessons links -->
     <div class="list-group yk-container-nav col-sm-3">
+      <a class="yk-toggle-menu list-group-item hidden-md hidden-lg hidden-sm" href="#">
+        Show menu
+      </a>
+      
       {# Loop over all lessons. #}
       {% for item in lesson_list %}
         <a class="list-group-item yk-lesson-name" href="/learn/lesson/{{ item.number }}/step/1/">
@@ -27,6 +32,8 @@
     <!-- content -->
     <div class="yk-container-content col-sm-9">
       {% if step %}
+        <h1 class="yk-page-title">{{ step.step_name }}</h1>
+      
         {{ step.description | safe }}
       {% else %}
         {# Lesson landing page. No step has been selected yet. #}
@@ -58,5 +65,26 @@
     
   </div> {# .row #}
 </div> {# .container #}
+
+  {# TODO: This should probably be moved to an external script eventually. #}
+  <script type="text/javascript">
+    if ( $('.yk-toggle-menu:visible').length ) {
+      $('.yk-container-nav').addClass('yk-menu-collapsed');
+    }
+    
+    $('.yk-toggle-menu').click(function (e) {
+      e.preventDefault();
+      var $menu = $('.yk-container-nav');
+      var newText;
+      $menu.toggleClass('yk-menu-collapsed');
+      if ( $menu.hasClass('yk-menu-collapsed') ) {
+        newText = 'Show menu';
+      } else {
+        newText = 'Hide menu';
+      }
+      $('.yk-toggle-menu').text(newText);
+    });
+  </script>
+
 
 {% include "letslearnpython/common_footer.html" %}
