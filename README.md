@@ -28,21 +28,20 @@ http://127.0.0.1:8000/admin/
 To manage content changes:
 --------------------------
 
-If you make changes to any content in the admin, dump the data back out into fixtures, then commit the new fixtures files:
+To dump data out of the database and into fixtures (run these any time you make changes to content through the admin, then be sure and commit the fixtures files):
 
     cd /path/to/pythonyoungcoders/letslearnpython
     python manage.py dumpdata --format=json lessons > lessons/fixtures/initial_data.json
     python manage.py dumpdata --format=json flatpages > letslearnpython/fixtures/initial_data.json
     python manage.py dumpdata --format=json teaching > teaching/fixtures/initial_data.json
 
-To load data back into the db from fixtures:
+To load data back into the db from fixtures (run these after every pull to ensure you have current content):
 
     cd /path/to/pythonyoungcoders/letslearnpython
     python manage.py loaddata lessons/fixtures/initial_data.json
     python manage.py loaddata letslearnpython/fixtures/initial_data.json
     python manage.py loaddata teaching/fixtures/initial_data.json
 
-You don't need to clear out or reset the database at any time - loaddata 
+You don't need to clear out or reset the database at any time - loaddata replaces the data for the apps you run it against - so, lessons/teaching and flatpages (the 'About' and 'Contribute' page content - the fixtures for this live under the letslearnpython app).
 
-This should not blow away any auth data you've created, it just replaces the data for the apps you run loaddata against - so, lessons/teaching and flatpages (the 'About' and 'Contribute' page content - the fixtures for this live under the letslearnpython app).
-
+This should not blow away any auth data you've created.
