@@ -19,13 +19,15 @@
     <!-- content -->
     <div class="yk-container-content col-sm-9">
       {% if step %}
-        <h2>{{ step.step_name }}</h2>
         {{ step.description | safe }}
       {% else %}
         {# Teaching landing page. No guideline has been selected yet. #}
         <h2>Teach Python!</h2>
-        <p>this is a class we teach at PyCon every year, blah blah blah</p>
-        <p>But you can teach it in your community too, etc etc etc</p>
+        <p>If you're a programmer, you probably remember the thrill you got when you first discovered what a powerful tool coding can be.</p>
+        <p>The only thing more exciting is seeing young students light up as they discover it too.</p>
+        <p>The content in the <a href="/learn/">Learn</a> section of this site is based on a class taught annually at PyCon North America.</p>
+        <p>While the web-based tutorial here can be used for self-teaching, you can use the same equipment and materials to teach a class in your community, even if you've never taught before.</p>
+<p>Are you interested in teaching your own beginner Python class? Then <a href="/teach/step/1/">read on</a> for more information!</p>
       {% endif %}
     </div><!-- end content -->
 

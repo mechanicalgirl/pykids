@@ -6,10 +6,10 @@
         <a href="/"><img src="{% static 'letslearnpython/images/site-header-logo.png' %}" alt="logo"></a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+
         <ul class="nav navbar-nav">
           <li class="active"><a href="/learn/">Learn</a></li>
           <li><a href="/teach/">Teach</a></li>
-
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" role="button"
              aria-haspopup="true" aria-expanded="false" href="#">
@@ -25,8 +25,8 @@
               </li>
             </ul>
           </li>
-
         </ul>
+
         <ul class="nav navbar-nav navbar-right">
           {% if lesson %}
             <li>
@@ -34,6 +34,7 @@
             </li>
           {% endif %}
         </ul>
+
       </div>
     </div>
   </nav>
