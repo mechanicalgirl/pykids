@@ -25,8 +25,10 @@ def contactus(request):
             body = render_to_string('letslearnpython/contact_notification.txt', email_dict)
             try:
                 sent = send_mail(subject, body, settings.ADMINS[0][1], [settings.ADMINS[0][1]])
+                context['success'] = True
                 context['message'] = "Your message has been sent:" + "\n" + message
             except:
+                context['success'] = False
                 context['message'] = "Sorry, your message could not be sent at this time. Please try again later." + "\n" + message
     else:
         form = ContactForm()
