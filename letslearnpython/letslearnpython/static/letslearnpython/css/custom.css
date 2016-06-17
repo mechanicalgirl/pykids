@@ -1,3 +1,27 @@
+/* WTF, custom theme? */
+
+.bg-success,
+.bg-primary,
+.bg-info,
+.bg-warning,
+.bg-danger {
+  padding: 15px;
+}
+
+.bg-success p:last-of-type,
+.bg-primary p:last-of-type,
+.bg-info p:last-of-type,
+.bg-warning p:last-of-type,
+.bg-danger p:last-of-type {
+  margin-bottom: 0;
+}
+
+
+label {
+  font-weight: bold;
+}
+
+
 /* Bump up the size of the code blocks. */
 pre {
   font-size: 16px;
