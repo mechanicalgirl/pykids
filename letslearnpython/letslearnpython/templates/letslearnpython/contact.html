@@ -16,7 +16,13 @@
       <h3 style="margin-bottom: 1em">Contact Us</h3>
 
       {% if message %}
-          <div class="{% if success %}bg-success{% else %}bg-danger{% endif %}">
+        {% if success %}
+          <div class="bg-success">
+            <p>Your message has been sent:</p>
+        {% else %}
+          <div class="bg-danger">
+            <p>Sorry, your message could not be sent at this time. Please try again later.</p>
+        {% endif %}
             {{ message.strip|linebreaks }}
           </div>
       {% else %}
