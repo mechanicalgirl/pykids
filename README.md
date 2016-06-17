@@ -45,3 +45,13 @@ To load data back into the db from fixtures (run these after every pull to ensur
 You don't need to clear out or reset the database at any time - loaddata replaces the data for the apps you run it against - so, lessons/teaching and flatpages (the 'About' and 'Contribute' page content - the fixtures for this live under the letslearnpython app).
 
 This should not blow away any auth data you've created.
+
+
+To try out the contact page:
+----------------------------
+
+If you want to test out the contact form, you'll need to have Postfix running locally:
+
+    sudo postfix start
+
+That's for OS X - if you're on, say, Windows, then I don't know. :)

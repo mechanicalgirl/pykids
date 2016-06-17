@@ -16,6 +16,10 @@ ALLOWED_HOSTS = []
 
 SITE_ID = 1
 
+ADMINS = (
+    ('Barbara Shaurette', 'admin@letslearnpython.com'),
+)
+MANAGERS = ADMINS
 
 # Application definition
 

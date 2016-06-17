@@ -1,4 +1,7 @@
 {% load staticfiles %}
+{% load flatpages %}
+{% get_flatpages as flatpages %}
+
 <header>
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -15,13 +18,17 @@
              aria-haspopup="true" aria-expanded="false" href="#">
               More
               <span class="caret"></span>
-           </a>
+            </a>
             <ul class="dropdown-menu">
+              {% if flatpages %}
+                {% for page in flatpages %}
+                  <li>
+                    <a href="/page{{ page.url }}">{{ page.title }}</a>
+                  </li>
+                {% endfor %}
+              {% endif %}
               <li>
-                <a href="/pages/contribute/">Contribute</a>
-              </li>
-              <li>
-                <a href="/pages/about/">About</a>
+                <a href="/contact/">Contact</a>
               </li>
             </ul>
           </li>

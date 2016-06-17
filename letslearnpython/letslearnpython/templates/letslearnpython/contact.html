@@ -1,0 +1,50 @@
+{% include "letslearnpython/common_head.html" %}
+{% include "letslearnpython/llp_header.html" %}
+
+<div class="yk-container container">
+
+  <div class="row">
+
+    <!-- left nav links -->
+    <div class="list-group yk-container-nav col-sm-2">
+        <br>
+    </div><!-- end left nav links -->
+
+    <!-- content -->
+    <div class="yk-container-content col-sm-8">
+
+      <h3>Contact Us</h3>
+      <p><br></p>
+
+      {% if message %}
+          <p>{{ message|linebreaks }}</p>
+      {% else %}
+          <form action="/contact/" method="post">
+            <fieldset>
+                {% csrf_token %}
+                <p>
+                  Your Name: <input id="id_name" maxlength="200" name="name" type="text">
+                  <br>
+                  {{ form.name.errors }}
+                </p>
+                <p>
+                  Email Address: <input id="id_email" maxlength="200" name="email" type="text">
+                  <br>
+                  {{ form.email.errors }}
+                </p>
+                <p>
+                  Your Message:<br>
+                  <textarea id="id_message" name="message" style="width: 400px; height: 75px"></textarea>
+                  {{ form.message.errors }}
+                </p>
+                <button type="submit" class="btn btn-primary" name="submit" value="submit">Send</button>
+            </fieldset>
+          </form>
+      {% endif %}
+
+    </div><!-- end home page content -->
+
+  </div> {# .row #}
+</div> {# .container #}
+
+{% include "letslearnpython/common_footer.html" %}
