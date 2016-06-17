@@ -29,9 +29,7 @@
 
         <ul class="nav navbar-nav navbar-right">
           {% if lesson %}
-            <li>
-              <a href="#">Lesson {{ lesson.number }}: {{ lesson.name }} - {{ step.step_name }}</a>
-            </li>
+            <p class="navbar-text yk-nav-label">Lesson {{ lesson.number }}: {{ lesson.name }} - {{ step.step_name }}</p>
           {% endif %}
         </ul>
 

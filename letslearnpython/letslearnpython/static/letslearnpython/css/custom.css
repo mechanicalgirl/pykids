@@ -106,3 +106,9 @@ ul.prompt li:before {
   content: '>>> ';
   color: red;
 }
+
+p.navbar-text.yk-nav-label {
+  font-weight: bold;
+  color: #fff;
+  line-height: 24px;
+}
