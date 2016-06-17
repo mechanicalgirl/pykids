@@ -44,6 +44,28 @@
 <script type="text/javascript">
   $('.dropdown-toggle').dropdown();
 </script>
+  
+<script type="text/javascript">
+    $('.yk-container-content pre').each(function (i, pre) {
+      var $pre = $(pre), code = $pre.html();
+
+      // Strip leading and trailing newlines/spaces.
+      code = code.replace(/^\s+/, '').replace(/\s+$/, '')
+
+      // Treat any line that begins with >>> as representing an IDLE prompt.
+      var promptPattern = /^(>>>|&gt;&gt;&gt;)/;
+
+      var output = code.split('\n').map(function (line) {
+        if ( promptPattern.exec(line) ) {
+          line = line.replace(promptPattern, '').trim();
+          return '<code class="prompt">' + line + '</code>';
+        }
+        return '<code>' + line + '</code>';
+      });
+      
+      $pre.html( output.join('\n') );
+    });
+</script>
 
 </body>
 </html>

@@ -1,3 +1,14 @@
+/* Bump up the size of the code blocks. */
+pre {
+  font-size: 16px;
+}
+
+/* To simulate an IDLE prompt. */
+pre code.prompt:before {
+  content: '>>> ';
+  color: red;
+}
+
 .yk-page-title {
   border-bottom: 1px solid #ccc;
 }
@@ -34,9 +45,9 @@
   }
   
 .yk-container-content {
-/*  float: left;
-  width: 75%;
-*/}
+  font-size: 17px;
+}
+
 .yk-container-content-flatpage {
 /*  float: left;
   width: 75%;
