@@ -78,6 +78,6 @@ Then you need to reinstall requirements so that Django is on the path:
 
 Now call runserver with 'python3' instead of 'python':
 
-    cd ~/path/to/pythonyoungcoders/letslearnpython
+    cd /path/to/pythonyoungcoders/letslearnpython
     python3 manage.py migrate
     python3 manage.py runserver
