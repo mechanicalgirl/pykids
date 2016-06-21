@@ -55,3 +55,43 @@ If you want to test out the contact form, you'll need to have Postfix running lo
     sudo postfix start
 
 That's for OS X - if you're on, say, Windows, then I don't know. :)
+
+
+To run with Python3:
+--------------------
+
+    cd ~/path/to/pythonyoungcoders/young-coders-env
+    source bin/activate
+
+    cd ~/path/to/pythonyoungcoders/
+    virtualenv -p python3 young-coders-env
+
+Stdout should be something like this:
+
+    Running virtualenv with interpreter /Library/Frameworks/Python.framework/Versions/3.5/bin/python3
+    Using base prefix '/Library/Frameworks/Python.framework/Versions/3.5'
+    New python executable in young-coders-env/bin/python3
+    Also creating executable in young-coders-env/bin/python
+    Installing setuptools, pip, wheel...done.
+
+Running this:
+
+    virtualenv -p python3 young-coders-env
+
+Should give you something like this:
+
+    Running virtualenv with interpreter /path/to/pythonyoungcoders/young-coders-env/bin/python3
+    Using real prefix '/Library/Frameworks/Python.framework/Versions/3.5'
+    New python executable in test/bin/python3
+    Not overwriting existing python script test/bin/python (you must use test/bin/python3)
+    Installing setuptools, pip, wheel...done.
+
+Then you need to reinstall requirements so that Django is on the path:
+
+    pip install -r requirements.txt
+
+Now call runserver with 'python3' instead of 'python':
+
+    cd ~/path/to/pythonyoungcoders/letslearnpython
+    python3 manage.py migrate
+    python3 manage.py runserver
