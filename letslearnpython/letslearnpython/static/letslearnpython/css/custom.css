@@ -115,6 +115,11 @@ pre code.prompt:before {
   }
 }
 
+.yk-home-container {
+  font-size: 20px;
+  width: 600px;
+}
+
 div.codewrap {
   whitespace: pre;
   font-family: monospace;
