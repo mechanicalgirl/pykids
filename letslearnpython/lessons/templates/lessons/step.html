@@ -20,7 +20,7 @@
         {% if item == lesson %}
           {# For the current lesson (and only the current lesson) we show all the steps. #}
           {% for item in step_list %}
-            <a class='list-group-item yk-step-name {% if item == step %}active{% endif %}' href="/learn/lesson/{{ lesson.number }}/step/{{ item.step_number }}">
+            <a class='list-group-item yk-step-name {% if item == step %}active{% endif %}' href="/learn/lesson/{{ lesson.number }}/step/{{ item.step_number }}/">
               {{ item.step_name }}
             </a>
           {% endfor %}
@@ -49,14 +49,14 @@
       
       <div class="yk-step-navigation clearfix">
         {% if prev_step %}
-          <a class="yk-step-navigation-prev" href="/learn/lesson/{{ prev_step.lesson.number }}/step/{{ prev_step.step_number }}">
+          <a class="yk-step-navigation-prev" href="/learn/lesson/{{ prev_step.lesson.number }}/step/{{ prev_step.step_number }}/">
           
             &larr; {{ prev_step.step_name }}
           </a>
         {% endif %}
       
         {% if next_step %}
-          <a class="yk-step-navigation-next" href="/learn/lesson/{{ next_step.lesson.number }}/step/{{ next_step.step_number }}">
+          <a class="yk-step-navigation-next" href="/learn/lesson/{{ next_step.lesson.number }}/step/{{ next_step.step_number }}/">
             {{ next_step.step_name }} &rarr;
           </a>      
         {% endif %}
