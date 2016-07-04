@@ -1,6 +1,4 @@
 {% load staticfiles %}
-{% load flatpages %}
-{% get_flatpages as flatpages %}
 
 <header>
   <nav class="navbar navbar-inverse">
@@ -20,16 +18,9 @@
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
-              {% if flatpages %}
-                {% for page in flatpages %}
-                  <li>
-                    <a href="/page{{ page.url }}">{{ page.title }}</a>
-                  </li>
-                {% endfor %}
-              {% endif %}
-              <li>
-                <a href="/contact/">Contact</a>
-              </li>
+              <li><a href="/page/about/">About</a></li>
+              <li><a href="/page/contribute/">Contribute</a></li>
+              <li><a href="/contact/">Contact</a></li>
             </ul>
           </li>
         </ul>

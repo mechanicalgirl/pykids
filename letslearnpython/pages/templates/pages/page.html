@@ -1,19 +1,19 @@
 {% include "letslearnpython/common_head.html" %}
-{% include "letslearnpython/llp_header.html" %}
+{% include "pages/pages_header.html" %}
 
 <div class="yk-container container">
 
   <div class="row">
 
     <!-- left nav links -->
-    <div class="list-group yk-container-nav col-sm-3">
+    <div class="list-group yk-container-nav col-sm-2">
         <br>
     </div><!-- end left nav links -->
 
     <!-- content -->
-    <div class="yk-container-content col-sm-9">
-        <h2>{{ flatpage.title }}</h2>
-        {{ flatpage.content }}
+    <div class="yk-container-content col-sm-8">
+        <h2>{{ page.page_name|title }}</h2>
+        {{ page.description|safe }}
     </div><!-- end home page content -->
 
   </div> {# .row #}

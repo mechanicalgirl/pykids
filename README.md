@@ -4,17 +4,15 @@ Create a virtual environment:
 ```python
 cd ~/path/to/pythonyoungcoders/
 virtualenv young-coders-env
-cd young-coders-env
-source bin/activate
+source young-coders-env/bin/activate
 ```
 
 To run locally:
 ---------------
 
 ```python
-cd ~/path/to/pythonyoungcoders/young-coders-env
-source bin/activate
-cd ..
+cd ~/path/to/pythonyoungcoders/
+source young-coders-env/bin/activate
 pip install -r requirements.txt
 cd letslearnpython
 python manage.py migrate
@@ -42,14 +40,14 @@ To dump data out of the database and into fixtures (run these from within an act
 
     cd /path/to/pythonyoungcoders/letslearnpython
     python manage.py dumpdata --format=json lessons > lessons/fixtures/initial_data.json
-    python manage.py dumpdata --format=json flatpages > letslearnpython/fixtures/initial_data.json
+    python manage.py dumpdata --format=json pages > pages/fixtures/initial_data.json
     python manage.py dumpdata --format=json teaching > teaching/fixtures/initial_data.json
 
 To load data back into the db from fixtures (run these from within an active virtualenv after every pull to ensure you have current content):
 
     cd /path/to/pythonyoungcoders/letslearnpython
     python manage.py loaddata lessons/fixtures/initial_data.json
-    python manage.py loaddata letslearnpython/fixtures/initial_data.json
+    python manage.py loaddata pages/fixtures/initial_data.json
     python manage.py loaddata teaching/fixtures/initial_data.json
 
 You don't need to clear out or reset the database at any time - loaddata replaces the data for the apps you run it against - so, lessons/teaching and flatpages (the 'About' and 'Contribute' page content - the fixtures for this live under the letslearnpython app).
