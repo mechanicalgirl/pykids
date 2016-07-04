@@ -29,7 +29,6 @@ $(document).ready(function () {
     $pre.addClass('toggle-collapsed');
     
     $pre.click(function () {
-      console.log('click!');
       var shouldBeExpanded = $pre.hasClass('toggle-collapsed');
       $pre.toggleClass('toggle-collapsed', !shouldBeExpanded);
     });
