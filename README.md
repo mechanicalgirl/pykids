@@ -1,3 +1,13 @@
+Create a virtual environment:
+-----------------------------
+
+```python
+cd ~/path/to/pythonyoungcoders/
+virtualenv young-coders-env
+cd young-coders-env
+source bin/activate
+```
+
 To run locally:
 ---------------
 
