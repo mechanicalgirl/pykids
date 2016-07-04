@@ -33,6 +33,11 @@ pre code.prompt:before {
   color: red;
 }
 
+td.yk-centered,
+th.yk-centered {
+  text-align: center;
+}
+
 .yk-page-title {
   border-bottom: 1px solid #ccc;
 }
@@ -141,3 +146,26 @@ p.navbar-text.yk-nav-label {
   color: #fff;
   line-height: 24px;
 }
+
+/* ANSWER BLOCKS */
+/* When collapsed, an answer block should show nothing and simply say "click
+   to reveal." */
+
+/* The PRE itself should still be visible, but without rendering newlines as
+   line breaks. */
+pre.toggle-collapsed {
+  white-space: normal;
+}
+
+/* All its lines of code get hidden, though. */
+pre.toggle-collapsed code {
+  display: none;
+}
+
+/* We want "click to reveal" displayed in the normal body font. */
+pre.toggle-collapsed:before {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  content: '(click to reveal)';
+  display: block;
+}
+

@@ -10,7 +10,7 @@
       {# Loop over all teaching guidelines #}
       {% if step_list %}
         {% for item in step_list %}
-          <a class="list-group-item yk-guideline-name" href="/teach/step/{{ item.step_number }}">{{ item.step_name }}</a>
+          <a class="list-group-item yk-guideline-name {% if item == step %}active{% endif %}" href="/teach/step/{{ item.step_number }}">{{ item.step_name }}</a>
         {% endfor %}
       {% endif %}
     </div>
