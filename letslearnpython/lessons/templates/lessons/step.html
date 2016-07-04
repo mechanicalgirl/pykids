@@ -67,25 +67,5 @@
   </div> {# .row #}
 </div> {# .container #}
 
-  {# TODO: This should probably be moved to an external script eventually. #}
-  <script type="text/javascript">
-    if ( $('.yk-toggle-menu:visible').length ) {
-      $('.yk-container-nav').addClass('yk-menu-collapsed');
-    }
-    
-    $('.yk-toggle-menu').click(function (e) {
-      e.preventDefault();
-      var $menu = $('.yk-container-nav');
-      var newText;
-      $menu.toggleClass('yk-menu-collapsed');
-      if ( $menu.hasClass('yk-menu-collapsed') ) {
-        newText = 'Show menu';
-      } else {
-        newText = 'Hide menu';
-      }
-      $('.yk-toggle-menu').text(newText);
-    });
-  </script>
-
 
 {% include "letslearnpython/common_footer.html" %}
