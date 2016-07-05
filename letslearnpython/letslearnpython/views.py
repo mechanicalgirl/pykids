@@ -21,7 +21,7 @@ def contactus(request):
             message = form.cleaned_data['message']
             from django.core.mail import send_mail
             email_dict = { 'sender': sender, 'sender_name': sender_name, 'message': message, 'date': datetime.date.today() }
-            subject = "Contact message sent from austincs.org"
+            subject = "Contact message sent from letslearnpython.com"
             body = render_to_string('letslearnpython/contact_notification.txt', email_dict)
             context['message'] = message
             try:
