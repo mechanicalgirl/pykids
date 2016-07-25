@@ -169,3 +169,11 @@ pre.toggle-collapsed:before {
   display: block;
 }
 
+/* The hamburger menu icon should be white, not gray. */
+.navbar-inverse .navbar-header span.icon-bar {
+  background-color: #fff;
+}
+
+.nav > li.yk-social-links a {
+  display: inline-block;
+}
