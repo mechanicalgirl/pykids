@@ -50,7 +50,7 @@ To load data back into the db from fixtures (run these from within an active vir
     python manage.py loaddata pages/fixtures/initial_data.json
     python manage.py loaddata teaching/fixtures/initial_data.json
 
-You don't need to clear out or reset the database at any time - loaddata replaces the data for the apps you run it against - so, lessons/teaching and flatpages (the 'About' and 'Contribute' page content - the fixtures for this live under the letslearnpython app).
+You don't need to clear out or reset the database at any time - loaddata replaces the data for the apps you run it against - so, lessons/teaching and pages (the 'About' and 'Contribute' page content).
 
 This should not blow away any auth data you've created.
 
