@@ -71,7 +71,7 @@ To run with Python3:
     cd /path/to/pykids/
     virtualenv -p python3 pykids-env
 
-Stdout should be something like this:
+Stdout should look something like this:
 
     Running virtualenv with interpreter /Library/Frameworks/Python.framework/Versions/3.5/bin/python3
     Using base prefix '/Library/Frameworks/Python.framework/Versions/3.5'
