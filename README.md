@@ -2,7 +2,7 @@ Create a virtual environment:
 -----------------------------
 
 ```python
-cd ~/path/to/pythonyoungcoders/
+cd ~/path/to/pykids/
 virtualenv young-coders-env
 source young-coders-env/bin/activate
 ```
@@ -11,7 +11,7 @@ To run locally:
 ---------------
 
 ```python
-cd ~/path/to/pythonyoungcoders/
+cd ~/path/to/pykids/
 source young-coders-env/bin/activate
 pip install -r requirements.txt
 cd letslearnpython
@@ -23,7 +23,7 @@ To create a superuser (for admin access):
 -----------------------------------------
 
 ```python
-cd ~/path/to/pythonyoungcoders/letslearnpython/
+cd ~/path/to/pykids/letslearnpython/
 python manage.py createsuperuser
 ```
 
@@ -38,14 +38,14 @@ To manage content changes:
 
 To dump data out of the database and into fixtures (run these from within an active virtualenv any time you make changes to content through the admin, then be sure and commit the fixtures files):
 
-    cd /path/to/pythonyoungcoders/letslearnpython
+    cd /path/to/pykids/letslearnpython
     python manage.py dumpdata --format=json lessons > lessons/fixtures/initial_data.json
     python manage.py dumpdata --format=json pages > pages/fixtures/initial_data.json
     python manage.py dumpdata --format=json teaching > teaching/fixtures/initial_data.json
 
 To load data back into the db from fixtures (run these from within an active virtualenv after every pull to ensure you have current content):
 
-    cd /path/to/pythonyoungcoders/letslearnpython
+    cd /path/to/pykids/letslearnpython
     python manage.py loaddata lessons/fixtures/initial_data.json
     python manage.py loaddata pages/fixtures/initial_data.json
     python manage.py loaddata teaching/fixtures/initial_data.json
@@ -68,7 +68,7 @@ That's for OS X - if you're on, say, Windows, then I don't know. :)
 To run with Python3:
 --------------------
 
-    cd /path/to/pythonyoungcoders/
+    cd /path/to/pykids/
     virtualenv -p python3 young-coders-env
 
 Stdout should be something like this:
@@ -86,6 +86,6 @@ Then you need to reinstall requirements so that Django is on the path:
 
 Now call runserver with 'python3' instead of 'python':
 
-    cd /path/to/pythonyoungcoders/letslearnpython
+    cd /path/to/pykids/letslearnpython
     python3 manage.py migrate
     python3 manage.py runserver
