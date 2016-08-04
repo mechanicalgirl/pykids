@@ -1,5 +1,6 @@
 {% include "letslearnpython/common_head.html" %}
 {% include "letslearnpython/llp_header.html" %}
+{% load staticfiles %}
 
 <div class="yk-container container">
 
@@ -16,6 +17,7 @@
         <h2>Let's Learn Python!</h2>
         <div class="yk-home-container">
           <p></p>
+          <img src="{% static 'letslearnpython/images/pythonlogo.png' %}" alt="logo" align="right">
           <p>Here you'll find step-by-step instructions for getting started with the Python programming language.</p>
           <p>Just click on <a href="/learn/">Learn</a> to begin.</p>
           <p>Are you familiar with Python and interested in teaching others?</p>
