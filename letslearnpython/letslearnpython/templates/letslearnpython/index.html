@@ -1,5 +1,6 @@
 {% include "letslearnpython/common_head.html" %}
 {% include "letslearnpython/llp_header.html" %}
+{% load staticfiles %}
 
 <div class="yk-container container">
 
@@ -16,10 +17,13 @@
         <h2>Let's Learn Python!</h2>
         <div class="yk-home-container">
           <p></p>
+          <img src="{% static 'letslearnpython/images/pythonlogo.png' %}" alt="logo" align="right">
           <p>Here you'll find step-by-step instructions for getting started with the Python programming language.</p>
           <p>Just click on <a href="/learn/">Learn</a> to begin.</p>
           <p>Are you familiar with Python and interested in teaching others?</p>
           <p>Click on <a href="/teach/">Teach</a> to get some guidelines for using this curriculum to organize your own class.</p>
+          <p>And please sign up for our mailing list to learn more about all the new developments coming up! We've got big plans!
+              {% include "letslearnpython/mailing_list_signup_form.html" %}</p>
         </div>
     </div><!-- end home page content -->
 
